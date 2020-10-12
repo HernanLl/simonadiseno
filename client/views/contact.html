@@ -1,0 +1,138 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simona diseño</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/assets/favicons/favicon.png"
+    />
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/hamburger.css" />
+    <link rel="stylesheet" href="/static/css/contact.css" />
+    <script src="/static/js/variables.js"></script>
+  </head>
+
+  <body>
+    <nav id="nav" class="nav">
+      <div class="nav__title">
+        <h1>Simona</h1>
+      </div>
+      <a id="hamburger" class="nav__hamburger" href="#"><span></span></a>
+      <ul class="nav__links">
+        <a href="/">
+          <li class="nav__link">Inicio</li>
+        </a>
+        <a href="/views/aboutme.html">
+          <li class="nav__link">Sobre mi</li>
+        </a>
+        <a href="/views/galery.html">
+          <li class="nav__link">Productos</li>
+        </a>
+        <a href="#">
+          <li class="nav__link nav__link--active">Contacto</li>
+        </a>
+      </ul>
+    </nav>
+    <section class="contact">
+      <div class="contact__card">
+        <div class="contact__information">
+          <div class="d-flex">
+            <img
+              class="contact__icon-title"
+              src="/static/assets/icons/woman.svg"
+              alt=""
+            />
+            <h1>Información</h1>
+          </div>
+          <h2>Belen Llull</h2>
+          <div class="d-flex align-center">
+            <img
+              class="contact__icon"
+              src="/static/assets/icons/whatsapp-b.svg"
+              alt=""
+            />
+            <p>+543435243489</p>
+          </div>
+          <div class="d-flex align-center">
+            <img
+              class="contact__icon"
+              src="/static/assets/icons/facebook-b.svg"
+              alt=""
+            />
+            <p>/simonadiseno</p>
+          </div>
+          <div class="d-flex align-center">
+            <img
+              class="contact__icon"
+              src="/static/assets/icons/instagram-b.svg"
+              alt=""
+            />
+            <p>/simonadiseno</p>
+          </div>
+          <div class="d-flex align-center">
+            <img
+              class="contact__icon"
+              src="/static/assets/icons/locate.svg"
+              alt=""
+            />
+            <p>Paraná, Entre Ríos</p>
+          </div>
+        </div>
+        <div class="contact__form">
+          <div class="d-flex">
+            <img
+              class="contact__icon-title"
+              src="/static/assets/icons/send.svg"
+              alt=""
+            />
+            <h1>Contacto</h1>
+          </div>
+          <form id="contact__form">
+            <div id="contact-message" class="contact__form__row"></div>
+            <div class="contact__form__row">
+              <input
+                id="contact__form-name"
+                class="contact__form__input"
+                type="text"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="contact__form__row">
+              <input
+                id="contact__form-phone"
+                class="contact__form__input"
+                type="text"
+                placeholder="Telefono"
+              />
+            </div>
+            <div class="contact__form__row">
+              <input
+                id="contact__form-email"
+                class="contact__form__input"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="contact__form__row">
+              <textarea
+                class="contact__form__input"
+                id="contact__form-message"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+            </div>
+            <div class="contact__form__row">
+              <button class="contact__form__button">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/contact.js"></script>
+  </body>
+</html>

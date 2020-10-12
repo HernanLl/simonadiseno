@@ -1,0 +1,74 @@
+.contact {
+  width: 100%;
+  height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__card {
+  width: 900px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  display: flex;
+  padding: 16px 32px;
+}
+.contact__card h1,
+.contact__card h2 {
+  font-weight: 100;
+}
+.contact__card h1 {
+  font-size: 28px;
+}
+.contact__information {
+  flex: 1;
+}
+.contact__icon {
+  width: 20px;
+  margin-right: 16px;
+}
+.contact__icon-title {
+  width: 50px;
+  margin-right: 16px;
+}
+.contact__form {
+  flex: 1;
+}
+.contact__form__input {
+  width: 100%;
+  border: none;
+  background: #eeee;
+  margin: 8px 0;
+  padding: 8px 16px;
+}
+.contact__form__button {
+  width: 100%;
+  border: none;
+  background: #ffbfbf;
+  color: white;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+.contact__img {
+  width: 400px;
+  object-fit: cover;
+}
+.contact__message-danger {
+  color: red;
+}
+.contact__message-success {
+  color: green;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .contact {
+    height: auto;
+  }
+  .contact__card {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,220 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simona diseño</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/assets/favicons/favicon.png"
+    />
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/carousel.css" />
+    <link rel="stylesheet" href="/static/css/hamburger.css" />
+    <link rel="stylesheet" href="/static/css/loader.css" />
+    <script src="/static/js/home.js"></script>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <div id="loader" class="loader">
+        <img
+          class="loader__heart-icon"
+          src="/static/assets/icons/heart.svg"
+          alt=""
+        />
+      </div>
+      <nav id="nav" class="nav">
+        <div class="nav__title">
+          <h1>Simona</h1>
+        </div>
+        <a id="hamburger" class="nav__hamburger" href="#"><span></span></a>
+        <ul class="nav__links">
+          <a href="/"><li class="nav__link nav__link--active">Inicio</li></a>
+          <a href="/views/aboutme.html"><li class="nav__link">Sobre mi</li></a>
+          <a href="/views/galery.html"><li class="nav__link">Productos</li></a>
+          <a href="/views/contact.html"><li class="nav__link">Contacto</li></a>
+        </ul>
+      </nav>
+      <section class="promotion"></section>
+      <header class="header">
+        <img
+          class="header__img"
+          onload="onLoadImage()"
+          src="/static/assets/images/bg-header.png"
+        />
+        <div class="header__filter"></div>
+        <img
+          class="header__img-left"
+          src="/static/assets/images/left.png"
+          alt=""
+        />
+        <img
+          class="header__title"
+          src="/static/assets/images/logo.png"
+          alt=""
+        />
+        <img
+          class="header__img-right"
+          src="/static/assets/images/right.png"
+          alt=""
+        />
+      </header>
+      <section class="info">
+        <div class="info__item">
+          <img
+            class="info__icon"
+            src="/static/assets/icons/shipping.svg"
+            alt="Imagen de un bus de envio"
+          />
+          <h3>Realizamos envios</h3>
+        </div>
+        <div class="info__item">
+          <img
+            class="info__icon"
+            src="/static/assets/icons/durable.svg"
+            alt="Imagen de una moneda (precio)"
+          />
+          <h3>Productos duraderos</h3>
+        </div>
+        <div class="info__item">
+          <img
+            class="info__icon"
+            src="/static/assets/icons/heart-w.svg"
+            alt="Imagen de un corazon (hecho a medida)"
+          />
+          <h3>Hechos a tu medida</h3>
+        </div>
+      </section>
+      <section class="best-products">
+        <h2>Productos destacados</h2>
+        <div class="flex-center">
+          <img
+            id="best-product-left"
+            class="best-products__arrow"
+            src="/static/assets/icons/back.svg"
+            alt="Back product arrow"
+          />
+          <img
+            id="best-product"
+            class="best-products__product"
+            src="/static/assets/images/product.png"
+            alt="Product"
+          />
+          <img
+            id="best-product-right"
+            class="best-products__arrow"
+            src="/static/assets/icons/next.svg"
+            alt="Next product arrow"
+          />
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories__items">
+          <div
+            data-value="Cuencos"
+            class="categories__item categories__item--cuencos"
+          >
+            <div class="flex-center categories__filter">
+              <div class="categories__filter-intensive"></div>
+              <h3 class="categories__item__title">Cuencos</h3>
+            </div>
+          </div>
+          <div
+            data-value="Mates"
+            class="categories__item categories__item--mates"
+          >
+            <div class="flex-center categories__filter">
+              <div class="categories__filter-intensive"></div>
+              <h3 class="categories__item__title">Mates</h3>
+            </div>
+            <div></div>
+          </div>
+          <div
+            data-value="Velas"
+            class="categories__item categories__item--velas"
+          >
+            <div class="flex-center categories__filter">
+              <div class="categories__filter-intensive"></div>
+              <h3 class="categories__item__title">Velas</h3>
+            </div>
+          </div>
+          <div
+            data-value="Macetas"
+            class="categories__item categories__item--macetas"
+          >
+            <div class="flex-center categories__filter">
+              <div class="categories__filter-intensive"></div>
+              <h3 class="categories__item__title">Macetas</h3>
+            </div>
+          </div>
+        </div>
+        <div class="categories__carousel">
+          <div id="carousel" class="carousel">
+            <div id="carousel__title" class="carousel__filter">Cuencos</div>
+            <div
+              data-value="Cuencos"
+              class="carousel__item o-0 animation-opacity"
+            >
+              <img src="/static/assets/images/cuencos.jpg" alt="" />
+            </div>
+            <div data-value="Mates" class="carousel__item o-0">
+              <img src="/static/assets/images/mates.jpg" alt="" />
+            </div>
+            <div data-value="Velas" class="carousel__item o-0">
+              <img src="/static/assets/images/velas.jpg" alt="" />
+            </div>
+            <div data-value="Tablas" class="carousel__item o-0">
+              <img src="/static/assets/images/macetas.jpg" alt="" />
+            </div>
+            <div id="arrow-left" class="carousel__arrow carousel__arrow--left">
+              <img src="/static/assets/icons/back.svg" alt="" />
+            </div>
+            <div
+              id="arrow-right"
+              class="carousel__arrow carousel__arrow--right"
+            >
+              <img src="/static/assets/icons/next.svg" alt="" />
+            </div>
+            <div id="carousel__points" class="carousel__points"></div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="footer__socialmedia">
+          <h2>Redes sociales:</h2>
+          <div class="d-flex align-center">
+            <img class="footer__icon" src="/static/assets/icons/facebook.svg" />
+            <a
+              class="link"
+              href="https://www.facebook.com/simona.santafeparana"
+              target="__blank"
+              >/simonadiseno</a
+            >
+          </div>
+          <div class="d-flex align-center">
+            <img
+              class="footer__icon"
+              src="/static/assets/icons/instagram.svg"
+            />
+            <a
+              class="link"
+              href="https://www.instagram.com/simona.diseno/"
+              target="__blank"
+              >/simonadiseno</a
+            >
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h2>Contacto:</h2>
+          <div class="d-flex align-center">
+            <img class="footer__icon" src="/static/assets/icons/whatsapp.svg" />
+            <p>+543435243489</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/carousel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.aboutme {
+  min-height: calc(100vh - 122px);
+  padding: 16px 64px;
+}
+.aboutme__title {
+  font-family: "Roboto-light", sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  margin: 0;
+}
+.aboutme__divisor {
+  width: 100px;
+  height: 1px;
+  background: #ffbfbf;
+  border: none;
+  margin: 2px 0 16px 0;
+}
+.aboutme__img {
+  max-width: 500px;
+  object-fit: cover;
+  width: 50%;
+}
+.aboutme__ly {
+  display: flex;
+}
+.aboutme__description {
+  margin: 0 32px;
+}
+@media (max-width: 1200px) {
+  .aboutme {
+    padding: 16px 32px 64px 32px;
+  }
+  .aboutme__ly {
+    flex-direction: column;
+  }
+  .aboutme__description {
+    margin: 0;
+  }
+  .aboutme__img {
+    margin: 16px 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Simona",
+  "short_name": "Simona",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5b6a6",
+  "theme_color": "#f5b6a6",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "src": "/static/assets/favicons/mate64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/static/assets/favicons/mate256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/static/assets/favicons/mate512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "."
+}

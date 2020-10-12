@@ -1,0 +1,37 @@
+.galery__widget__form {
+  padding: 0 16px;
+}
+.galery__form__input {
+  padding: 8px 16px;
+  margin: 16px 0;
+  border: none;
+  background: #eee;
+}
+.galery__widget__form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.galery__form__img {
+  max-width: 75%;
+  max-height: 300px;
+  margin: 16px 0;
+}
+.galery__form__icon {
+  width: 25px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.galery__newproduct {
+  padding: 8px 16px;
+  border: none;
+  background: #ffbfbf;
+  color: white;
+  cursor: pointer;
+}
+.galery__newproduct:hover {
+  opacity: 0.5;
+}
+.galery__form__button {
+  padding: 8px 16px;
+}

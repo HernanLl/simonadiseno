@@ -1,0 +1,132 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simona diseño</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/assets/favicons/favicon.png"
+    />
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/galery.css" />
+    <link rel="stylesheet" href="/static/css/admin.css" />
+    <link rel="stylesheet" href="/static/css/hamburger.css" />
+    <script src="/static/js/variables.js"></script>
+  </head>
+
+  <body>
+    <nav id="nav" class="nav">
+      <div class="nav__title">
+        <h1>Simona</h1>
+      </div>
+    </nav>
+    <section class="galery">
+      <section id="widget" class="d-none galery__widget">
+        <div class="galery__widget__form">
+          <div class="d-flex justify-between">
+            <h1 id="widget-title" class="galery__form__title"></h1>
+            <img
+              id="widget-cancel"
+              src="/static/assets/icons/cancel-b.svg"
+              class="galery__form__icon"
+              alt=""
+            />
+          </div>
+          <form class="d-flex flex-column galery__widget__form" action="">
+            <input
+              id="form-name"
+              class="galery__form__input"
+              type="text"
+              placeholder="Nombre"
+            />
+            <input
+              id="form-price"
+              class="galery__form__input"
+              type="number"
+              placeholder="Precio"
+            />
+            <select
+              id="form-category"
+              class="galery__form__input"
+              name="categories"
+              id="categories"
+            >
+              <option value="Mates">Mates</option>
+              <option value="Sets">Sets</option>
+              <option value="Macetas">Macetas</option>
+              <option value="Cuencos">Cuencos</option>
+              <option value="Velas">Velas</option>
+            </select>
+            <input id="form-file" class="galery__form__input" type="file" />
+            <div>
+              <img id="img-preview" class="galery__form__img" alt="" />
+            </div>
+            <button class="galery__form__button" id="widget-btn"></button>
+          </form>
+        </div>
+      </section>
+      <div class="galery__title">Catalogo de productos</div>
+      <div class="galery__ly-products">
+        <div class="d-flex flex-column">
+          <button id="add-product" class="galery__newproduct">
+            Agregar producto
+          </button>
+          <section
+            id="filter-products"
+            class="galery__filter-products galery__filter-products--hide"
+          >
+            <div class="d-flex align-center justify-between">
+              <h1>Filtros</h1>
+              <img
+                id="dropdown-btn"
+                class="galery__filter-products__icon"
+                src="/static/assets/icons/down-arrow.svg"
+                alt=""
+              />
+            </div>
+            <hr />
+            <input
+              id="search-input"
+              class="galery__filter-products__search"
+              type="text"
+              placeholder="Buscar"
+            />
+            <ul class="galery__filter-products__categories">
+              <li
+                class="galery__filter-products__category galery__filter-products__category--active"
+                data-value="Todos"
+              >
+                Todos
+              </li>
+              <li class="galery__filter-products__category" data-value="Mates">
+                Mates
+              </li>
+              <li
+                data-value="Cuencos"
+                class="galery__filter-products__category"
+              >
+                Cuencos
+              </li>
+              <li data-value="Sets" class="galery__filter-products__category">
+                Sets
+              </li>
+              <li
+                data-value="Macetas"
+                class="galery__filter-products__category"
+              >
+                Macetas
+              </li>
+              <li data-value="Velas" class="galery__filter-products__category">
+                Velas
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section id="galery" class="galery__products"></section>
+      </div>
+    </section>
+    <script src="/static/js/admin.js"></script>
+  </body>
+</html>

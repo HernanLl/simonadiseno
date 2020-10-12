@@ -1,0 +1,36 @@
+.login {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 72px);
+  justify-content: center;
+  align-items: center;
+}
+.login__form {
+  width: 500px;
+  height: 500px;
+  padding: 16px 32px;
+}
+.login__form__input {
+  width: 100%;
+  border: none;
+  background: #eeee;
+  margin: 8px 0;
+  padding: 8px 16px;
+}
+.login__form__button {
+  width: 100%;
+  border: none;
+  background: #ffbfbf;
+  color: white;
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .login__form {
+    padding: 16px;
+  }
+}
